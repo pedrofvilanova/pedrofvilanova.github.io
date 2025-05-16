@@ -22,7 +22,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "https://github.com/pedrofvilanova/pedrofvilanova.github.io/blob/master/profile.png?raw=true"
+  avatar           : "IMG_8478.jpeg"
   name             : "Pedro Vilanova"
   pronouns         : "He/him"  
   bio              : "Short biography for the left-hand sidebar"
