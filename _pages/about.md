@@ -21,3 +21,5 @@ Alongside this, I am deeply passionate about the Human Genetics field, aiming to
 6. Stem Cell Biology and Developmental Genetics
 
 I’m always open to new collaborations and discussions in genetics, genomics, and related fields. If you’re interested in working together or just want to connect, feel free to reach out!
+
+> “Somewhere, something incredible is waiting to be known.” — Carl Sagan
