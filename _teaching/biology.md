@@ -1,7 +1,7 @@
 ---
 title: "Biology for High School students"
 collection: teaching
-type: "High School course"
+type: "Workshop"
 permalink: /teaching/biology
 venue: "State Technical School "Deputy Ary de Camargo Pedroso""
 date: 2023-01-01
