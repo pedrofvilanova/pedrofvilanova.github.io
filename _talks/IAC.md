@@ -1,5 +1,5 @@
 ---
-title: "Insights into Sugarcane Smut Disease: Genomic Comparison of _Sporisorium scitamineum_ Haplotypes and Implications for Virulence"
+title: "(Portuguese) Insights into Sugarcane Smut Disease: Genomic Comparison of _Sporisorium scitamineum_ Haplotypes and Implications for Virulence"
 collection: talks
 type: "Talk"
 permalink: /talks/IAC
