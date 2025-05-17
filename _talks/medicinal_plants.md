@@ -10,7 +10,8 @@ location: "Piracicaba, São Paulo, Brazil"
 
 You can access the talk [here](https://www.youtube.com/watch?v=Ozj0fWVxQ5M)
 
-🌿 Key Themes
+🌿 **Key Themes**
+
 *Biodiversity and Conservation*: The Atlantic Forest is home to a vast array of medicinal plant species. The discussion emphasized the importance of preserving this biodiversity, which is crucial for both ecological balance and the discovery of new medicinal compounds.
 
 *Traditional Knowledge*: The conversation underscored the value of indigenous and local communities' traditional knowledge regarding medicinal plants. Integrating this wisdom with scientific research can lead to more holistic and effective healthcare solutions.
