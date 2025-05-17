@@ -9,7 +9,7 @@ redirect_from:
 
 Hi there! I’m a biologist and Master’s student in Genetics and Plant Breeding at the University of São Paulo (USP). Currently, my research focuses on fungal genomics, with a particular emphasis on understanding sugarcane smut disease, a major challenge for agriculture. I use comparative genomics and transcriptome profiling to explore genetic variability and gene regulation in fungal pathogens.
 
-Alongside this, I am deeply passionate about the Human Genetics field, aiming to pursue a PhD in this field to advance research on genetic disease mechanisms and gene regulation.
+In addition, I am deeply passionate about Human Genetics, aiming to pursue a PhD in this field to advance research on genetic disease mechanisms and gene regulation.
 
 🔬 Areas of interest:
 
