@@ -1,7 +1,7 @@
 ---
 title: "(Portuguese) Medicinal Plants and Phytotherapy: Between Traditional Knowledge and Modern Science. In: Medicinal Plants and Phytotherapy: Tradition and Science"
 collection: publications
-category: books or chapters
+category: books
 permalink: /publication/medicinal_plants
 excerpt: '*Open access at https://doi.org/10.11606/9786589722496*. Medicinal plants and herbal medicines are widely used in Brazil, making their proper use essential to ensure both efficacy and safety. Developed by the Extension Group on Medicinal Plants (GEPLAM), affiliated with the Department of Genetics at the "Luiz de Queiroz" College of Agriculture (ESALQ/USP), this booklet aims to disseminate knowledge about the use of these plants, raising public awareness of their value and promoting their sustainable use in an educational and concise manner. The booklet provides a range of information on the subject, including which professionals are authorized to prescribe these products and issues related to the conservation and sustainable use of Brazilian biodiversity, emphasizing the dangers of indiscriminate use and its potential impacts on the body. In this way, the material seeks to expand efforts in scientific outreach, offering didactic information on the benefits and potential risks of plants with medicinal properties.'
 date: 2024-01-04
