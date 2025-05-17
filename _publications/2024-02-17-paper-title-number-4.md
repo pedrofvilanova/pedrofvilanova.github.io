@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2024-02-17-paper-title-number-4
 excerpt: 'This paper is about fixing template issue #693.'
-date: 2020
+date: 2020-11-18
 venue: '28º International Symposium on Scientific and Technological Initiation (SIICUSP)'
 citation: 'VILANOVA-FERREIRA, P. F.; CRESTANA, G.S. ; MONTEIRO-VITORELLO, C. B. . Compatibility analysis in crossing reactions (mating-type) between smut fungi species. In: 28º International Symposium on Scientific and Technological Initiation (SIICUSP), 2020. '
 ---
