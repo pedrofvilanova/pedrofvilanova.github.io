@@ -3,7 +3,7 @@ title: "Biology for High School students"
 collection: teaching
 type: "High School Education"
 permalink: /teaching/biology
-venue: "State Technical School "Deputy Ary de Camargo Pedroso"
+venue: 'State Technical School "Deputy Ary de Camargo Pedroso"'
 date: 2023-01-01
 location: "Piracicaba, São Paulo, Brazil"
 ---
