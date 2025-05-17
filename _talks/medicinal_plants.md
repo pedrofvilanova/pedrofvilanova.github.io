@@ -1,7 +1,7 @@
 ---
 title: "(Portuguese) Conversation Circle: Research Opportunities Involving Medicinal Plants in the Atlantic Forest"
 collection: talks
-type: "talks"
+type: "Talk"
 permalink: /talks/medicinal_plants
 venue: "Interdisciplinary Dialogues Week at ESALQ/USP"
 date: 2021-06-16
