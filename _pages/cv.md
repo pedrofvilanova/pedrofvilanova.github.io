@@ -73,13 +73,21 @@ Supervised by Dr. Claudia Monteiro-Vitorello and Leila Peters
 **Bioinformatics & Programming:**  
 - Python & R for omics pipelines  
 - IGV, Circos for visualization  
-- Oxford Nanopore MinION library prep and sequencing  
+- Oxford Nanopore MinION library prep and sequencing
+- AlphaFold3
+- PyMOL
 
 **Laboratory Techniques:**  
-- Microbial culture, DNA/RNA extraction, PCR, gel electrophoresis  
+- Microbial culture,
+- DNA/RNA extraction,
+- PCR,
+- Gel electrophoresis
+- Cloning
+- Agroinfiltration
+- Transient expression of heterologous proteins
 
 **Software:**  
-- Microsoft Office, Google Suite  
+- Microsoft Office, Google Suite
 
 ---
 
@@ -89,4 +97,6 @@ Supervised by Dr. Claudia Monteiro-Vitorello and Leila Peters
 - Organizer & author of ESALQ Biology Handbook – 2021  
 - Organizer, 1st Virtual Bio Symposium – 2020  
 - Multiple student leadership roles at ESALQ – 2019–2021  
-- Speaker at "Bio na Rua" (Zoo outreach event) – 2019  
+- Speaker at "Bio na Rua" (Zoo outreach event) – 2019
+---
+ 
