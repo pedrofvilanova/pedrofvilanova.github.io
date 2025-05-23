@@ -26,7 +26,14 @@ conda install bioconda::blast
 :computer: Creating a local BLAST database
 ======
 
-To create a BLAST database, first prepare your ```.fasta``` file, which contains the sequences you want to include in the database. These sequences will be the _subject_ sequences for the BLAST database in which _query_ sequences will serve as input. The command to create the database is ```makeblastdb```, which is quite straightforward. 
+To create a BLAST database, first prepare your ```.fasta``` file, which contains the sequences you want to include in the database. These sequences will be the _subject_ sequences for the BLAST database in which _query_ sequences will serve as input. 
+
+<img width="540" alt="image" src="https://github.com/user-attachments/assets/8a835bd1-8e1d-4671-a0e9-8f3b08cf1bb9" />
+
+Clich [here](https://www.researchgate.net/publication/9089461_A_novel_design_of_whole-genome_microarray_probes_for_Saccharomyces_cerevisiae_which_minimizes_cross-hybridization) to see image source.
+
+
+The command to create the database is ```makeblastdb```, which is quite straightforward. 
 
 Below you can see what the proper multifasta format is:
 
@@ -64,6 +71,9 @@ After preparing the database file:
 makeblastdb -in input.fasta -parse_seqids -dbtype nucl -out input.db
 ```
 
+![image](https://github.com/user-attachments/assets/c340fc94-3cf0-4bca-b144-66d72f9751b1)
+
+
 :running: Running local BLAST
 ======
 
@@ -97,8 +107,8 @@ bitscore    bit score
 
 Always remember to respect the BLAST algorithms detailed below:
 
-![image](https://github.com/user-attachments/assets/7861668f-9db0-4f24-8bb6-22e97cff6505)
+![image](https://github.com/user-attachments/assets/f56ed43a-d3fb-43ac-84dd-e0925704913a)
 
-[Image Source](http://bch709.plantgenomicslab.org/BLAST/index.html)
+Check the tutorial from Oregon State University for more information and images [here](https://open.oregonstate.education/computationalbiology/chapter/command-line-blast/)
 
 Happy blasting! :)
