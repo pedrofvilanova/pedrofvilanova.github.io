@@ -1,5 +1,5 @@
 ---
-title: 'Creating a BLAST database'
+title: '[Bioinformatics #1] Using BLAST on the command line'
 date: 2025-05-18
 permalink: /posts/2025/05/blast-database/
 tags:
@@ -8,12 +8,50 @@ tags:
   - tutorial
 ---
 
-Anyone who has worked with bioinformatics has had to perform at least one BLAST search. Sometimes we need to deal with large datasets that are beyond the capacity of the NCBI's web platform, which forces us to use the command line. Most people who are starting at bioinformatics don't know that blasting on the command line is easier than it seems. This quick tutorial aims at elucidating that. 
+![image](https://github.com/user-attachments/assets/dfc2898b-1df8-4ccf-a7ab-ef8823cd39b8)
+
+
+Anyone who has worked with bioinformatics has had to perform at least one BLAST search before. Sometimes we need to deal with large datasets that are beyond the capacity of the NCBI's web platform, which forces us to use the command line. Most people who are starting at bioinformatics don't know that blasting on the command line is easier than it seems. This quick tutorial aims to quickly describe how to install BLAST, create a local database and start blasting.
+
+Installing BLAST
+======
+
+There are multiple ways to install BLAST in your local computer or cloud server. Sometimes I find the easiest way to be through ``conda``:
+
+```
+conda install bioconda::blast
+```
+
 
 Creating a local BLAST database
 ======
 
-To create a BLAST database, first prepare your ```.fasta``` file containing the sequences you wish compose the database, i.e, they will be the sequences that our input sequences to blast will be blasted against. The command to create the database is ```makeblastdb``` which is pretty intuitive. 
+To create a BLAST database, first prepare your ```.fasta``` file containing the sequences you wish to compose the database, i.e, they will be the sequences that our input sequences to blast will be blasted against. The command to create the database is ```makeblastdb``` which is pretty intuitive. 
+
+Below you can see what the proper multifasta format is:
+1. Each sequence starts with ```>``` as the identifier
+2. After the identifier there are multiple or single nucleotide/amino acid sequences you wish to compose the database. 
+
+```
+>FN297865.1 Escherichia coli partial lacZ gene, strain CECT 423
+CCGCTGTGGTACACGCTGTGCGACCGCTACGGCCTGTATGTGGTGGATGAAGCCAATATTGAAACCCACG
+GCATGGTGCCAATGAATCGTCTGACCGATGATCCGCGCTGGCTACCGGCGATGAGCGAACGCGTAACGCG
+AATGGTGCAGCGCGATCGTAATCACCCGAGTGTGATCATCTGGTCGCTGGGGAATGAATCAGGCCACGGC
+GCTAATCACGACGCGCTGTATCGCTGGATCAAATCTGTCGATCCTTCCCGCCCGGTGCAGTATGAAGGCG
+GCGGAGCCGACACCACGGCCACCGATATTATTTGCCCGATGTACGCGCGCGTGGATGAAGACCAGCCCTT
+CCCGGCTGTGCCGAAATGGTCCATCAAAAAATGGCTTTCGCTACCTGGAGAGACGCGCCCGCTGATCCTT
+TGCGAATACGCCCACGCGATGGGTAACAGTCTTGGCGGTTTCGCTAAATACTGGCAGGCGTTTCGTCAGT
+ATCCCCGTTTACAGGGCGGCTTCGTCTGGGACTGGGTGGATCAGTCGCTGATTAAATATGATGAAAACGG
+CAACCCGTGGTCGGCTTACGGCGGTGATTTTGGCGATAC
+>GQ925859.1 Escherichia coli strain MTCC 723 LacY (lacY) gene, partial cds
+ACCGGTGAACAGGGTACGCGGGTATTTGGCTACGTAACGACAATGGGCGAATTACTTAACGCCTCGATTA
+TGTTCTTTGCGCCACTGATCATTAATCGCATCGGTGGGAAAAACGCCCTGCTGCTGGCTGGCACTATTAT
+GTCTGTACGTATTATTGGCTCATCGTTCGCCACCTCAGCGCTGGAAGTGGTTATTCTGAAAACGCTGCAT
+ATGTTTGAAGTACCGTTCCTGCTGGTGGGCTGCTTTAAATATATTACCAGCCAGTTTGAAGTGCGTTTTT
+CAGCG
+```
+
+After preparing the database file:
 
 1. The ``-in``  parameter states what the input file for the database will be.
 2. The ``-dbtype`` parameter defines if the input sequences are nucleotides (ATCG) or protein (amino acids). Choose according to your needs. Use ``nucl`` if you have DNA/RNA sequences or ``prot`` if you have amino acid sequences.
@@ -28,7 +66,28 @@ Running local BLAST
 
 Now that the DB is created, let's imagine I intend to blast a set of gene sequences (i.e, nucleotides) against my nucleotide database. I can use command ```blastn``` to do so. 
 
+
 ```
-blastn -query query.fasta -db input.fasta -out output.tsv
+blastn -evalue 1e-10 -db database/input.fasta -query Genome/.fasta -out blast_out.csv -outfmt 6 -word_size 7
 ```
 
+1. The ```blastn``` command means I am querying nucleotide sequences against a nucleotide database.
+2. The ```-evalue``` parameter, according to BLAST, sets the expect value, which "represents the number of alignments with scores equal to or better than the observed alignment that could be expected to occur by random chance. A smaller E-value indicates a more statistically significant match."
+3. The ```-out``` parameter indicates the output file the blast searches will be saved.
+4. The ```-outfmt 6``` defines the tabular format of the output. When using the 6 parameter, a table will be outputted with the following columns:
+
+
+```
+qseqid      query or source (gene) sequence id
+sseqid      subject or target (reference genome) sequence id
+pident      percentage of identical positions
+length      alignment length (sequence overlap)
+mismatch    number of mismatches
+gapopen     number of gap openings
+qstart      start of alignment in query
+qend        end of alignment in query
+sstart      start of alignment in subject
+send        end of alignment in subject
+evalue      expect value
+bitscore    bit score
+```
