@@ -1,7 +1,7 @@
 ---
 title: '[Bioinformatics #1] Using BLAST on the command line'
 date: 2025-05-23
-permalink: /posts/2025/05/blast-database/
+permalink: /posts/blast-database/
 tags:
   - blast
   - bioinformatics
