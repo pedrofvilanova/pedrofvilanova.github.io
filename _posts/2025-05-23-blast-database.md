@@ -71,9 +71,6 @@ After preparing the database file:
 makeblastdb -in input.fasta -parse_seqids -dbtype nucl -out input.db
 ```
 
-![image](https://github.com/user-attachments/assets/c340fc94-3cf0-4bca-b144-66d72f9751b1)
-
-
 :running: Running local BLAST
 ======
 
