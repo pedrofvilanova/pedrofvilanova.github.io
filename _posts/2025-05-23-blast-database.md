@@ -99,3 +99,4 @@ Always remember to respect the BLAST algorithms detailed below:
 
 [Image Source](http://bch709.plantgenomicslab.org/BLAST/index.html)
 
+Happy blasting! :)
