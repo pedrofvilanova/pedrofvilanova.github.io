@@ -52,6 +52,8 @@ ATGTTTGAAGTACCGTTCCTGCTGGTGGGCTGCTTTAAATATATTACCAGCCAGTTTGAAGTGCGTTTTT
 CAGCG
 ```
 
+>Bioinformaticians often need to BLAST a few sequences against large databases, such as the non-redundant (nr) BLAST database. In such cases, you can access these up-to-date databases at https://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/. However, be mindful of the file sizes, storage limits, and processing power required for these databases.
+
 After preparing the database file:
 
 1. The ``-in``  parameter states what the input file for the database will be.
